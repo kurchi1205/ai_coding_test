@@ -24,7 +24,7 @@ To analyze whether a test image is similar to the given train images , if it is 
 - If these feature vectors are similar to the feature vector of the test image , that implies the test image is similar to the given images 
 - Then I can return the value Apple
 
-## Steps of the solution 
+## Steps of the solution:
 - Processing the train images which includes **resizing the images** and **normalizing the pixels.**
 - Developing the **Autoencoder model** with maximum of **256 features** in the latent space 
 - Training the model for 50 epochs 
@@ -38,3 +38,10 @@ To analyze whether a test image is similar to the given train images , if it is 
 - If the **result <=0.01** , then the test image is an apple else not
 
 #### For getting results, run Testing_file.py . The results will also be stored in Results.csv
+
+#### Answers to the questions :
+1. My desired salary is 8 LPA - 10 LPA INR . 
+2. I am available immediately.
+3. In the job description , I noticed the location as Delhi . I have no problem relocating to that location.
+4. I live in India , So there is no need for a sponsorship .
+5. My English proficiency is fluent . 
