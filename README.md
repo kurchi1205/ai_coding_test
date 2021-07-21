@@ -1,27 +1,40 @@
 # ai_coding_test
 
-Hello,
 
-This is Young from LuxPM. You have applied for the position of AI engineer. Thank you for your interest in working with us.
 
-We have reviewed your application and decided to proceed with the next step which is a coding test. Please follow the guideline for the test.
+## Problem Statement : 
+To analyze whether a test image is similar to the given train images , if it is similar then to return Apple
 
-1. Use the following images and label it as apple.
-2. Createa a directory called test.
-3. If I add a similar image into the directory, the machine should return "apple" as a value.
-4. Create an image file and provide us with steps for setting up the machine.
+## Given : 
+8 Images of Apple 
 
-Also, please answer the following questions.
+## Libraries Required:
+- Pandas
+- OS
+- OpenCV
+- Matplotlib
+- Numpy
+- Keras 
+- SKLearn
+- Pickle
 
-1. What is your desired salary?
-2. What is your ideal starting date?
-3. If you live more than 70 minutes away from the company’s location, are you willing to be relocated to somewhere closer to the company?
-4. If you live outside of the company, do you need sponsorship for visa?
-5. What is the level of your proficiency in English?
-6. Also, please note that this is not a remote position.
+## Solution Theory:
+- To build an Autoencoder that will encode and decode the train images . 
+- Once the train images are encoded , the image features can be extracted from the latent space . '
+- If these feature vectors are similar to the feature vector of the test image , that implies the test image is similar to the given images 
+- Then I can return the value Apple
 
-Thank you for your time. I look forward to hearing from you soon.
+## Steps of the solution 
+- Processing the train images which includes **resizing the images** and **normalizing the pixels.**
+- Developing the **Autoencoder model** with maximum of **256 features** in the latent space 
+- Training the model for 50 epochs 
+- Extracting the features from the latent space 
+- Performing **Mean** over the features and deriving the resultant vector.
+- Forming a cluster the feature vectors using Kmeans Clustering and getting the **centroid feature vector** .
+- Calculating **Cosine- Similarity** between each image vector and the centroid feature vector.
+- Finding the **Threshold Similarity** by calculating **mean of the similarity values of all the train images** . 
+- For each of the test image features , I have calculated the cosine similarity with the centroid vector
+- I have subtracted the test similarity of each image from the Threshold Similarity .
+- If the **result <=0.01** , then the test image is an apple else not
 
-Best Regards,
-
-Young Yu
+#### For getting results, run Testing_file.py . The results will also be stored in Results.csv
