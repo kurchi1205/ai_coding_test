@@ -1,0 +1,28 @@
+Image_src,Label
+test/apple_1.png,Apple
+test/apple_2.png,Apple
+test/apple_3.png,Apple
+test/apple_4.png,Apple
+test/apple_5.png,Apple
+test/apple_6.png,Apple
+test/apple_7.jpg,Apple
+test/apple_8.jpg,Apple
+test/test_1.jfif,Not Apple
+test/test_10.jfif,Not Apple
+test/Test_11.jfif,Not Apple
+test/test_13.jfif,Not Apple
+test/test_14.jfif,Apple
+test/test_15.jfif,Not Apple
+test/test_16.jfif,Not Apple
+test/test_17.jfif,Apple
+test/test_18.jfif,Apple
+test/test_19.jpg,Apple
+test/test_2.jfif,Not Apple
+test/test_20.png,Not Apple
+test/test_3.jfif,Apple
+test/test_4.jfif,Apple
+test/test_5.jfif,Not Apple
+test/test_6.jfif,Apple
+test/test_7.jfif,Not Apple
+test/test_8.jfif,Apple
+test/test_9.jfif,Not Apple
