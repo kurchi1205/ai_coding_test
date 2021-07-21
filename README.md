@@ -30,7 +30,7 @@ To analyze whether a test image is similar to the given train images , if it is 
 - Training the model for 50 epochs 
 - Extracting the features from the latent space 
 - Performing **Mean** over the features and deriving the resultant vector.
-- Forming a cluster the feature vectors using Kmeans Clustering and getting the **centroid feature vector** .
+- Forming a cluster of the feature vectors using Kmeans Clustering and getting the **centroid feature vector** .
 - Calculating **Cosine- Similarity** between each image vector and the centroid feature vector.
 - Finding the **Threshold Similarity** by calculating **mean of the similarity values of all the train images** . 
 - For each of the test image features , I have calculated the cosine similarity with the centroid vector
