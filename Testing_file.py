@@ -25,12 +25,12 @@ def generate_feat(encoder_layer,input_layer,imgs):
     return encoded_img
 
 def generate_results(autoencoder):
-    test_img_paths =os.listdir('ai_coding_test-main/test/')
+    test_img_paths =os.listdir('test/')
     test_imgs=[]
     #Reading and processing the test images
     
     for i in test_img_paths:
-        test_img = cv2.imread('ai_coding_test-main/test/'+i)
+        test_img = cv2.imread('test/'+i)
         test_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2RGB)
         test_img = cv2.resize(test_img , (224,224))
         img_array = np.array(test_img,dtype=np.float32)
@@ -61,7 +61,7 @@ def generate_results(autoencoder):
             plt.imshow(test_imgs[i])
             plt.show()
             print(label)
-        results.loc[i,'Image_src']= 'ai_coding_test-main/test/'+test_img_paths[i]
+        results.loc[i,'Image_src']= 'test/'+test_img_paths[i]
         results.loc[i,'Label']=label
         print("****************************************************")
     results.to_csv('Results.csv',index=False)
