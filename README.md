@@ -37,7 +37,7 @@ To analyze whether a test image is similar to the given train images , if it is 
 - I have subtracted the test similarity of each image from the Threshold Similarity .
 - If the **result <=0.01** , then the test image is an apple else not
 
-#### For getting results, run Testing_file.py . The results will also be stored in Results.csv
+#### For getting results, add the test image to the test folder and run Testing_file.py . The results will also be stored in Results.csv . 
 
 #### Answers to the questions :
 1. My desired salary is 8 LPA - 10 LPA INR . 
